@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>github ci</title>
+    <title>cnsusu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        html,
+        body,
+        #app {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    
+        @keyframes shine {
+            0% {
+                text-shadow: 0 0 20px rgba(255, 17, 119, 0.5);
+                box-shadow: 0 0 20px rgba(255, 17, 119, 0.5);
+                /* color: lightblue; */
+            }
+    
+            50% {
+                text-shadow: 0 0 100px rgba(255, 17, 119, 1);
+                box-shadow: 0 0 100px rgba(255, 17, 119, 1);
+                /* color: lightskyblue; */
+            }
+    
+            100% {
+                text-shadow: 0 0 20px rgba(255, 17, 119, 0.5);
+                box-shadow: 0 0 20px rgba(255, 17, 119, 0.5);
+                /* color: lightblue; */
+            }
+        }
+    
+        div#content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    
+        span {
+            animation-name: shine;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            color: rgba(255, 17, 119, 1);
+            font-size: 200px;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(255, 17, 119, 1);
+            box-shadow: 0 0 20px rgba(255, 17, 119, 1);
+        }
+    </style>
 </head>
 <body>
-    mondify ci test app 90
+    <div id="app">
+        <div id="content">
+            <span>t</span>
+            <span>e</span>
+            <span>s</span>
+            <span>t</span>
+            <span>1</span>
+        </div>
+    </div>
 </html>
